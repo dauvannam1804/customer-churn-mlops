@@ -33,6 +33,10 @@ Before starting the services, ensure you have:
 - At least 8GB of available RAM
 - At least 20GB of free disk space
 - For monitoring GPU metrics: NVIDIA Docker runtime (nvidia-docker2)
+- **Loki Docker Driver** (required for centralized logging):
+  ```bash
+  docker plugin install grafana/loki-docker-driver:latest --alias loki --grant-all-permissions
+  ```
 
 **Create the external Docker network:**
 
